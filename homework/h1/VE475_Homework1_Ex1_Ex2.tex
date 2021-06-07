@@ -1,0 +1,105 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{enumerate}
+\usepackage{amsmath}
+
+\begin{document}
+\title{VE475 Intro to Cryptography Homework 1}
+\author{Taoyue Xia, 518370910087}
+\date{2020/05/20}
+\maketitle
+
+\section{Ex1}
+\begin{enumerate}
+\item As Alice use the Caesar cipher, we can use the equation $x-\kappa \  mod \  26$ to find the answer.
+After running the algorithm in python, one word is "river", and the other is "arena" which can be recognized.\\
+So we know that Bob should meet Alice at the river or at the arena, and the parameter $\kappa$ is 13 or 4.
+\item Let the key matrix K be a $2\times 2$ matrix $\begin{pmatrix} a & b \\ c & d \end{pmatrix}$, 
+then use matrix \\inversion to calculate K.\\
+      \begin{equation*}
+        \begin{split}
+            \begin{pmatrix} 3 & 14 \\ 13 & 19 \end{pmatrix} \cdot K = \begin{pmatrix} 4 & 11 \\ 13 & 8 \end{pmatrix}\, mod\, 26\\
+            \begin{pmatrix} a & b \\ c & d \end{pmatrix} = \begin{pmatrix} 3 & 14 \\ 13 & 19 \end{pmatrix}^{-1}
+                \cdot \begin{pmatrix} 4 & 11 \\ 13 & 8 \end{pmatrix}\, mod\, 26\\
+        \end{split}
+      \end{equation*}  
+      For the plain text matrix A $\begin{pmatrix} 3 & 14 \\ 13 & 19 \end{pmatrix}$, it has $det(A)=-125$ and $gcd(-125, 26) =1$\\
+      \\
+      \\
+      \\
+      So $A^{-1}=\frac{1}{-125} \begin{pmatrix} 19 & -14 \\ -13 & 3 \end{pmatrix}$
+      And it is calculated that 21 is the inverse of -125 modulo 26, such that we get:
+      $$A^{-1}=\begin{pmatrix} 399 & -294 \\ -273 & 63 \end{pmatrix}=\begin{pmatrix} 9 & 18 \\ 13 & 11 \end{pmatrix}\, mod\, 26$$
+      Then we put $A^{-1}$ into the initial equation:
+      \begin{equation*}
+        \begin{split}
+            \begin{pmatrix} a & b \\ c & d \end{pmatrix} = \begin{pmatrix} 9 & 18 \\ 13 & 11 \end{pmatrix}
+                \cdot \begin{pmatrix} 4 & 11 \\ 13 & 8 \end{pmatrix}\, mod\, 26\\
+                \begin{pmatrix} a & b \\ c & d \end{pmatrix} = \begin{pmatrix} 270 & 243 \\ 195 & 231 \end{pmatrix}
+                    =\begin{pmatrix} 10 & 9 \\ 13 & 23 \end{pmatrix}\, mod\, 26
+        \end{split}
+    \end{equation*}
+    So we get the answer that the encryption matrix is $K = \begin{pmatrix} 10 & 9 \\ 13 & 23 \end{pmatrix}$.
+\item As $n|ab$, we know that $gcd(ab, n)=n$. While $gcd(a, n) = 1$, we can deduce that $gcd(b, n) = n \ \Rightarrow \ n|b$,
+and the proof is done.
+\item \begin{equation*}
+        \begin{split}
+          30030\ \div\ 257 = 116...218\\
+          257\ \div\ 218 = 1...39\\
+          218\ \div\ 39 = 5...23\\
+          39\ \div\ 23 = 1...16\\
+          23\ \div\ 16 = 1...7\\
+          16\ \div\ 7 = 2...2\\
+          7\ \div\ 2 = 3...1\\
+          2\ \div\ 1 = 2
+        \end{split}
+      \end{equation*}
+      According to the computation above, we find that $gcd(30030, 257) = 1$, which indicate that 30030 and 257 are relatively prime.\\
+      To prove that 257 is prime, we just need to calculate the gcd of 257 and all the prime number less than its square root.
+      After using the Euclidean Algorithm, we can obviously find that gcd of 257 and all the prime number satisfying the above condition
+      is 1, so we can deduce that 257 is prime.
+\item Set the OTP as k, and the first message as m1, the second message as m2, the first time ciphertext as c1, 
+      the second-time ciphertext as c2.
+      \begin{equation*}
+        \begin{split}
+            c1 = m1 \oplus k,\ c2 = m2 \oplus k\\
+            \Rightarrow c1 \oplus c2 = (m1 \oplus k) \oplus (m2 \oplus k) = m1 \oplus m2
+        \end{split}
+      \end{equation*}
+      Then attackers can use KPA to get the real key by multiple attacking, and finally get the key.
+\item To be secure, it should has greater or equal to $2^{128}$ operations. Then the size $n$ can be caluclated as following 
+      (choose the base of $log()$ function as 2):
+      
+        \begin{align*}
+            2^{O(\sqrt{nlog(n)})} &\geq 2^{128}\\
+            nlog(n) &\geq 128^2\\
+            n &\geq 1546.43
+        \end{align*}
+      
+      Then choose $n$ to be 1547, so the size of the graph should be at least 1547.
+\end{enumerate}
+
+\newpage
+
+\section{Ex2}
+\begin{enumerate}
+    \item The Vigenère cipher is partly like the Caesar cipher, it uses a random key to decide how much it will change from plain text
+          to ciphertext. Then it will look up in a alphabet table to finally determine the cipertext. What's more, if the key's length
+          is shorter than the plain text, it will be repeated.\\
+          For example, if the plain text is "goodmorning" and the key is "beautiful", then we extend the key to be "beautifulbe",
+          then match the ciphertext for "g" and "b", "o" and "e", etc. Finally, after looking up in the alphabet table, we will finally
+          get the ciphertext.
+    \item \begin{enumerate}[a)]
+            \item As Bob send the same letter several hundred times, after being encrypted, the ciphertext will look like a paragraph
+                  fulfilled with a repeated six-letter word, because the key is six-letter long.
+            \item Because Bob send the same letter a lot of times, the ciphertext is periodic with length six, so the key is
+                  six-letter long.
+            \item Eve just need to add six numbers to the corresponding number of the ciphertext, and try for 26 times, then she will
+                  find the final answer.
+          \end{enumerate}
+\end{enumerate}
+
+\newpage
+
+
+\end{document}
