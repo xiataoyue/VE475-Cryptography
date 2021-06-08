@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/aes/aes.c
+aes.h
+C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/aes/aes.h
+
+C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/aes/aes.h
+stdio.h
+-
+stdint.h
+-
+stdlib.h
+-
+
+C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/aes/main.c
+stdio.h
+-
+aes.h
+C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/aes/aes.h
+time.h
+-
+
