@@ -6,19 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/James Xia/Desktop/ex4/aes.h
+C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/aes.c
+aes.h
+C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/aes.h
+
+C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/aes.h
 stdio.h
 -
 stdint.h
 -
 stdlib.h
--
-
-C:/Users/James Xia/Desktop/ex4/main.c
-stdio.h
--
-aes.h
-C:/Users/James Xia/Desktop/ex4/aes.h
-time.h
 -
 

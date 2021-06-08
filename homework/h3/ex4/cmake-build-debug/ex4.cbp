@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/James Xia/Desktop/ex4/cmake-build-debug"/>
+				<Option working_dir="C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ex4">
-				<Option output="C:/Users/James Xia/Desktop/ex4/cmake-build-debug/ex4.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/James Xia/Desktop/ex4/cmake-build-debug"/>
+				<Option output="C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/ex4.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -29,15 +29,15 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex4"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex4"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ex4/fast">
-				<Option output="C:/Users/James Xia/Desktop/ex4/cmake-build-debug/ex4.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/James Xia/Desktop/ex4/cmake-build-debug"/>
+				<Option output="C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/ex4.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -47,15 +47,15 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex4/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex4/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="sbox">
-				<Option output="C:/Users/James Xia/Desktop/ex4/cmake-build-debug/sbox.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/James Xia/Desktop/ex4/cmake-build-debug"/>
+				<Option output="C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/sbox.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -65,15 +65,15 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 sbox"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 sbox"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="sbox/fast">
-				<Option output="C:/Users/James Xia/Desktop/ex4/cmake-build-debug/sbox.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/James Xia/Desktop/ex4/cmake-build-debug"/>
+				<Option output="C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/sbox.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -83,46 +83,46 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 sbox/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 sbox/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/James Xia/Desktop/ex4/cmake-build-debug"/>
+				<Option working_dir="C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/James Xia/Desktop/ex4/cmake-build-debug"/>
+				<Option working_dir="C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/James Xia/Desktop/ex4/aes.c">
+		<Unit filename="C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/aes.c">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/James Xia/Desktop/ex4/aes.h">
+		<Unit filename="C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/aes.h">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/James Xia/Desktop/ex4/main.c">
+		<Unit filename="C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/main.c">
 			<Option target="ex4"/>
 		</Unit>
-		<Unit filename="C:/Users/James Xia/Desktop/ex4/sbox.c">
+		<Unit filename="C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/sbox.c">
 			<Option target="sbox"/>
 		</Unit>
-		<Unit filename="C:/Users/James Xia/Desktop/ex4/CMakeLists.txt">
+		<Unit filename="C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

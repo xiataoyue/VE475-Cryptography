@@ -62,10 +62,10 @@ RM = D:\Jetbrains\apps\CLion\ch-0\211.7442.42\bin\cmake\win\bin\cmake.exe -E rm 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\James Xia\Desktop\ex4"
+CMAKE_SOURCE_DIR = "C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\James Xia\Desktop\ex4\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4\cmake-build-debug"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -94,14 +94,14 @@ clean: CMakeFiles/sbox.dir/clean
 CMakeFiles/ex4.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\James Xia\Desktop\ex4\cmake-build-debug\CMakeFiles" --progress-num=1,2,3 "Built target ex4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4\cmake-build-debug\CMakeFiles" --progress-num=1,2,3 "Built target ex4"
 .PHONY : CMakeFiles/ex4.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ex4.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\James Xia\Desktop\ex4\cmake-build-debug\CMakeFiles" 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4\cmake-build-debug\CMakeFiles" 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/ex4.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\James Xia\Desktop\ex4\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/ex4.dir/rule
 
 # Convenience name for target.
@@ -121,14 +121,14 @@ CMakeFiles/ex4.dir/clean:
 CMakeFiles/sbox.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sbox.dir\build.make CMakeFiles/sbox.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sbox.dir\build.make CMakeFiles/sbox.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\James Xia\Desktop\ex4\cmake-build-debug\CMakeFiles" --progress-num=4,5 "Built target sbox"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4\cmake-build-debug\CMakeFiles" --progress-num=4,5 "Built target sbox"
 .PHONY : CMakeFiles/sbox.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sbox.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\James Xia\Desktop\ex4\cmake-build-debug\CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4\cmake-build-debug\CMakeFiles" 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/sbox.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\James Xia\Desktop\ex4\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/sbox.dir/rule
 
 # Convenience name for target.

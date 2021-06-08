@@ -61,10 +61,10 @@ RM = D:\Jetbrains\apps\CLion\ch-0\211.7442.42\bin\cmake\win\bin\cmake.exe -E rm 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\James Xia\Desktop\ex4"
+CMAKE_SOURCE_DIR = "C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\James Xia\Desktop\ex4\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ex4.dir/depend.make
@@ -77,29 +77,29 @@ include CMakeFiles/ex4.dir/flags.make
 
 CMakeFiles/ex4.dir/main.c.obj: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\James Xia\Desktop\ex4\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ex4.dir/main.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ex4.dir\main.c.obj -c "C:\Users\James Xia\Desktop\ex4\main.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ex4.dir/main.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ex4.dir\main.c.obj -c "C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4\main.c"
 
 CMakeFiles/ex4.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ex4.dir/main.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\James Xia\Desktop\ex4\main.c" > CMakeFiles\ex4.dir\main.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4\main.c" > CMakeFiles\ex4.dir\main.c.i
 
 CMakeFiles/ex4.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ex4.dir/main.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\James Xia\Desktop\ex4\main.c" -o CMakeFiles\ex4.dir\main.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4\main.c" -o CMakeFiles\ex4.dir\main.c.s
 
 CMakeFiles/ex4.dir/aes.c.obj: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/aes.c.obj: ../aes.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\James Xia\Desktop\ex4\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ex4.dir/aes.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ex4.dir\aes.c.obj -c "C:\Users\James Xia\Desktop\ex4\aes.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ex4.dir/aes.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ex4.dir\aes.c.obj -c "C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4\aes.c"
 
 CMakeFiles/ex4.dir/aes.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ex4.dir/aes.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\James Xia\Desktop\ex4\aes.c" > CMakeFiles\ex4.dir\aes.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4\aes.c" > CMakeFiles\ex4.dir\aes.c.i
 
 CMakeFiles/ex4.dir/aes.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ex4.dir/aes.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\James Xia\Desktop\ex4\aes.c" -o CMakeFiles\ex4.dir\aes.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4\aes.c" -o CMakeFiles\ex4.dir\aes.c.s
 
 # Object files for target ex4
 ex4_OBJECTS = \
@@ -115,7 +115,7 @@ ex4.exe: CMakeFiles/ex4.dir/build.make
 ex4.exe: CMakeFiles/ex4.dir/linklibs.rsp
 ex4.exe: CMakeFiles/ex4.dir/objects1.rsp
 ex4.exe: CMakeFiles/ex4.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\James Xia\Desktop\ex4\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable ex4.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable ex4.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ex4.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -128,6 +128,6 @@ CMakeFiles/ex4.dir/clean:
 .PHONY : CMakeFiles/ex4.dir/clean
 
 CMakeFiles/ex4.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\James Xia\Desktop\ex4" "C:\Users\James Xia\Desktop\ex4" "C:\Users\James Xia\Desktop\ex4\cmake-build-debug" "C:\Users\James Xia\Desktop\ex4\cmake-build-debug" "C:\Users\James Xia\Desktop\ex4\cmake-build-debug\CMakeFiles\ex4.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4" "C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4" "C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4\cmake-build-debug" "C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4\cmake-build-debug" "C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4\cmake-build-debug\CMakeFiles\ex4.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/ex4.dir/depend
 

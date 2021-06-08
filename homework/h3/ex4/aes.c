@@ -72,6 +72,7 @@ void inv_shift_rows(uint8_t bytes[16]) {
     bytes[7] = temp3;
 }
 
+// Below are the multiplication needed for AES in GF(2^8)
 uint8_t multi_two(uint8_t x) {
     if(x >= 0x80) {
         return (uint8_t) ((x << 1) ^ 0x1b);
@@ -140,6 +141,7 @@ void inv_mix_columns(uint8_t bytes[16]) {
     }
 }
 
+// a deep copy of message or key, in case of changing the original data and make it easy to return
 uint8_t *tk_copy(const uint8_t x[16]) {
     uint8_t *copy = malloc(16 * sizeof(uint8_t));
     for(int i = 0; i < 16; i++) {
@@ -148,6 +150,8 @@ uint8_t *tk_copy(const uint8_t x[16]) {
     return copy;
 }
 
+// The key expansion operation, and save the 44 32-bit words in a 11*4 2-dim array.
+// The four 32-bit words are saved as 16 8-bit hexadecimal values, so the returned array is actually 11*16.
 uint8_t **key_expansion(const uint8_t key[16]) {
     uint8_t **round_key = malloc(11 * sizeof(uint8_t *));
     round_key[0] = tk_copy(key);
@@ -181,6 +185,7 @@ void add_round_key(uint8_t message[16], const uint8_t key[16]) {
     }
 }
 
+// The complete encode process, including 11 rounds.
 uint8_t *encode(const uint8_t message[16], const uint8_t key[16]){
     uint8_t *bytes = tk_copy(message);
     uint8_t **round_key = key_expansion(key);
@@ -197,11 +202,10 @@ uint8_t *encode(const uint8_t message[16], const uint8_t key[16]){
     shift_rows(bytes);
     add_round_key(bytes, round_key[10]);
     free_key(round_key);
-    uint8_t *result = tk_copy(bytes);
-    free(bytes);
-    return result;
+    return bytes;
 }
 
+// The corresponding decode process, 11 rounds also.
 uint8_t *decode(const uint8_t cipher[16], const uint8_t key[16]){
     uint8_t *bytes = tk_copy(cipher);
     uint8_t **round_key = key_expansion(key);
@@ -218,7 +222,5 @@ uint8_t *decode(const uint8_t cipher[16], const uint8_t key[16]){
     inv_sub_bytes(bytes);
     add_round_key(bytes, round_key[0]);
     free_key(round_key);
-    uint8_t *result = tk_copy(bytes);
-    free(bytes);
-    return result;
+    return bytes;
 }

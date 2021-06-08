@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/James Xia/Desktop/ex4/sbox.c
+C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/sbox.c
 stdio.h
 -
 stdint.h

@@ -15,10 +15,12 @@ int num_bits(uint16_t x) {
     return count;
 }
 
+// calculate the number of bits difference
 int diff(uint16_t x, uint8_t y) {
     return num_bits(x) - num_bits(y);
 }
 
+// calculate the quotient of two elements in GF(2^8) and return, at the same time save the remainder in r
 uint8_t divide(uint16_t x, uint8_t y, uint8_t *r) {
     uint8_t result = 0;
     int dis = diff(x, y);
@@ -31,6 +33,7 @@ uint8_t divide(uint16_t x, uint8_t y, uint8_t *r) {
     return result;
 }
 
+// calculate the multiplication of two hexadecimal numbers in GF(2^8)
 uint8_t multiply(uint8_t x, uint8_t y) {
     if(x == 0 || y == 0) return 0;
     int result = y;
@@ -52,6 +55,7 @@ uint8_t multiply(uint8_t x, uint8_t y) {
     return result;
 }
 
+// Apply the extended Euclidean algorithm to calculate the multiplication inverse of one hexadecimal value
 uint8_t extended(uint16_t x, uint8_t y) {
     uint8_t x0 = 1, y0 = 0, x1 = 0, y1 = 1;
     uint8_t temp1, temp2;
@@ -75,6 +79,7 @@ uint8_t extended(uint16_t x, uint8_t y) {
     return y0;
 }
 
+// transform the 8-bit value using xor with c[]
 uint8_t transform(uint8_t x) {
     int b[8];
     for(int i = 0; i < 8; i++) {
@@ -94,6 +99,7 @@ uint8_t transform(uint8_t x) {
     return result;
 }
 
+// transform all the 8-bit value in a for loop
 void transform_all(uint8_t *x){
     for(int i = 1; i < 256; i++) {
         uint8_t temp = i;
@@ -103,25 +109,22 @@ void transform_all(uint8_t *x){
 }
 
 int main(){
-    uint8_t daf = 0xf8;
-    uint8_t x = 0x10;
-    uint8_t r;
-    uint8_t y = divide(0x10, 0xb, &r);
-    uint8_t z = extended(0x11b, 0x2);
     uint8_t sbox[0x100];
     transform_all(sbox);
-    printf("%#x\n", z);
-    printf("%#x\n", transform(0x1));
 
+    printf("S-box: \n");
     for(int i = 0; i < 256; i++) {
         printf("0x%02x, ", sbox[i]);
         if(i % 16 == 15) printf("\n");
     }
+
     printf("\n");
+
     uint8_t inv_sbox[0x100];
     for(int i = 0; i < 256; i++) {
         inv_sbox[sbox[i]] = i;
     }
+    printf("Inverse S-box: \n");
     for(int i = 0; i < 256; i++){
         printf("0x%02x, ", inv_sbox[i]);
         if(i % 16 == 15) printf("\n");

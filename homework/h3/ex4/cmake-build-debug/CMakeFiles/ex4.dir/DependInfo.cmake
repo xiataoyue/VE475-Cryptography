@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/James Xia/Desktop/ex4/aes.c" "C:/Users/James Xia/Desktop/ex4/cmake-build-debug/CMakeFiles/ex4.dir/aes.c.obj"
-  "C:/Users/James Xia/Desktop/ex4/main.c" "C:/Users/James Xia/Desktop/ex4/cmake-build-debug/CMakeFiles/ex4.dir/main.c.obj"
+  "C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/aes.c" "C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/CMakeFiles/ex4.dir/aes.c.obj"
+  "C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/main.c" "C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h3/ex4/cmake-build-debug/CMakeFiles/ex4.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

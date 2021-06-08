@@ -1,4 +1,4 @@
-D:\Jetbrains\apps\CLion\ch-0\211.7442.42\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\James Xia\Desktop\ex4"
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/James Xia/Desktop/ex4/cmake-build-debug
+Cannot generate into C:\Users\James Xia\Desktop\VE475 Cryptography\homework\h3\ex4
+It is already used for project \mnt\c\Users\James Xia\desktop\ve475 cryptography\homework\h3\ex4
+
+Please either delete it manually or select another generation directory
