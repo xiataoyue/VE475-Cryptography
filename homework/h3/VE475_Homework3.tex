@@ -5,7 +5,7 @@
 \usepackage{amssymb}
 \usepackage{blkarray}
 \usepackage{geometry}
-\geometry{left = 3.0cm, right = 3.0cm}
+\geometry{left = 2.0cm, right = 2.0cm}
 
 \begin{document}
 \title{VE475 Intro to Cryptography Homework 3}
@@ -74,7 +74,7 @@
                         00001001 & 00001110 & 00001011 & 00001101\\
                         00001101 & 00001001 & 00001110 & 00001011\\
                         00001011 & 00001101 & 00001001 & 00001110
-                  \end{pmatrix} = \begin{pmatrix} 0e & 0b & 0d & 09\\ 09 & 0e & 0b & 0d\\ 0d & 09 & 0e & 0b\\ 0b & 09 & 0e & 0d\end{pmatrix}
+                  \end{pmatrix} = \begin{pmatrix} 0e & 0b & 0d & 09\\ 09 & 0e & 0b & 0d\\ 0d & 09 & 0e & 0b\\ 0b & 0d & 09 & 0e\end{pmatrix}
                   $$
                   Then we calculate $A_2\times A_1$ in $\mathbb{GF}(2^8)$, for example, the four elements of the first row of 
                   matrix $B = A_2 \times A_1$ will be:
@@ -136,6 +136,7 @@
             so that it's easier to understand and implement.
 \end{enumerate}
 
+\newpage
 \section{Ex3--DES}
 \begin{enumerate}
       \item In DES, the size of input text and key are both 64 bits.
