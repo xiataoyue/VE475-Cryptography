@@ -54,12 +54,35 @@
 
 \section*{Ex2}
 \begin{enumerate}
-    \item For round 1, the original key is used, thus the key used is 128 bits of 1.
+    \item For round 1, $K(4) \sim K(7)$ is used.
+          $K(4) = K(0) \oplus T(K(3))$. According to c2, page 49, we can obtain $T(K(3))$ as:\newline
+          $$r(4) = 00000010^{\frac{4-4}{4}} = 00000001$$
+          $$K(3) = \begin{pmatrix} 11111111\\ 11111111\\ 11111111\\ 11111111 \end{pmatrix}$$
+          After top shift, it still remains itself. Then apply the \emph{SubBytes} layer, we can get:
+          $$S(K(3)) = \begin{pmatrix} 00010110\\ 00010110\\ 00010110\\ 00010110 \end{pmatrix}$$
+          Then, we can calculate $T(K(3))$ as:
+          $$T(K(3)) = \begin{pmatrix} 00010110\\ 00010110\\ 00010110\\ 00010110\end{pmatrix} \oplus 
+          \begin{pmatrix} 00000001\\ 00000000\\ 00000000\\ 00000000\end{pmatrix} = 
+          \begin{pmatrix} 00010111\\ 00010110\\ 00010110\\ 00010110 \end{pmatrix}$$
+          Finally, we can calculate $K(4)$ as:
+          $$K(4) = K(0) \oplus T(K(3)) = \begin{pmatrix} 11111111\\ 11111111\\ 11111111\\ 11111111 \end{pmatrix}
+          \oplus \begin{pmatrix} 00010111\\ 00010110\\ 00010110\\ 00010110\end{pmatrix} = 
+          \begin{pmatrix} 11101000\\ 11101001\\ 11101001\\ 11101001 \end{pmatrix}$$
+          Then we can apply $K(i) = K(i - 4) \oplus K(i - 1)$ for $K(5), K(6), K(7)$, 
+          The final key for round 1 is:
+          $$
+          \begin{pmatrix}
+                11101000 & 00010111 & 11101000 & 00010111\\
+                11101001 & 00010110 & 11101001 & 00010110\\
+                11101001 & 00010110 & 11101001 & 00010110\\
+                11101001 & 00010110 & 11101001 & 00010110\\
+          \end{pmatrix}
+          $$
     \item $$K(5) = K(4) \oplus K(1)$$
     \item It is obvious that for a 4-bit number $X$:
           $$X \oplus 1111 = \overline{X}$$
           As the key of first round is 128-bits 1, thus:
-          $$K(0) = K(1) = K(2) = K(3) = \begin{pmatrix} 1111\\ 1111\\ 1111\\ 1111\end{pmatrix}$$
+          $$K(0) = K(1) = K(2) = K(3) = \begin{pmatrix} 11111111\\ 11111111\\ 11111111\\ 11111111\end{pmatrix}$$
           Then we can calculate $K(10)$ as:
           \begin{align*}
               K(10) &= K(9) \oplus K(6)\\
