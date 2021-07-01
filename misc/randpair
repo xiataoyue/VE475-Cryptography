@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+import random
+import numpy as np
+random.seed(20210531)
+l = np.array(range(1,25))
+random.shuffle(l)
+[print('group {:2d} - group {:2d}'.format(*_)) for _ in l.reshape(12,2)]
