@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/James Xia/Desktop/VE475 Cryptography/homework/h6/ex6/ex6.cpp
+iostream
+-
+cstdlib
+-
+cstdint
+-
+

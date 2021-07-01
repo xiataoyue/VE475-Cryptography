@@ -26,7 +26,8 @@ int main() {
         message[i] = (uint8_t) (rand() % 256);
         key[i] = (uint8_t) (rand() % 256);
     }
-
+    uint8_t key1[16] = {0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff};
+    uint8_t **round = key_expansion(key1);
     printf("Plaintext: ");
     print_message(message);
     printf("Key: ");
@@ -50,6 +51,12 @@ int main() {
 
     free(cipher);
     free(decipher);
-
+    for(int i = 0; i < 16; i++) {
+        printf("0x%02x, ", round[1][i]);
+    }
+    for(int i = 0; i < 11; i++){
+        free(round[i]);
+    }
+    free(round);
     return 0;
 }
