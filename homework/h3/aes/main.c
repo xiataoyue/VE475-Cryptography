@@ -17,17 +17,17 @@ int compare(const uint8_t origin[16], const uint8_t *final) {
 }
 
 int main() {
-    uint8_t message[16];
-    uint8_t key[16];
+    uint8_t message[16] = {0x0f, 0x15, 0x14, 0x06, 0x06, 0x06, 0x07, 0x08, 0x19, 0x13, 0x0d, 0x0b, 0x35, 0x16, 0x3c, 0x0d};;
+
 
     //randomly generate plaintext and key
     srand(time(0));
-    for(int i = 0; i < 16; i++) {
-        message[i] = (uint8_t) (rand() % 256);
-        key[i] = (uint8_t) (rand() % 256);
-    }
-    uint8_t key1[16] = {0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff};
-    uint8_t **round = key_expansion(key1);
+    //for(int i = 0; i < 16; i++) {
+        //message[i] = (uint8_t) (rand() % 256);
+        //key[i] = (uint8_t) (rand() % 256);
+    //}
+
+    uint8_t key[16] = {0x16, 0x19, 0x16, 0x08, 0x16, 0x19, 0x0d, 0x0e, 0x16, 0x19, 0x8, 0x37, 0x35, 0x3c, 0x36, 0x34};
     printf("Plaintext: ");
     print_message(message);
     printf("Key: ");
@@ -51,12 +51,6 @@ int main() {
 
     free(cipher);
     free(decipher);
-    for(int i = 0; i < 16; i++) {
-        printf("0x%02x, ", round[1][i]);
-    }
-    for(int i = 0; i < 11; i++){
-        free(round[i]);
-    }
-    free(round);
+
     return 0;
 }
