@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/James Xia/Desktop/cipher1/aes.h
+stdio.h
+-
+stdint.h
+-
+stdlib.h
+-
+
+C:/Users/James Xia/Desktop/cipher1/main.cpp
+iostream
+-
+fstream
+-
+cstring
+-
+transform.h
+C:/Users/James Xia/Desktop/cipher1/transform.h
+aes.h
+C:/Users/James Xia/Desktop/cipher1/aes.h
+
+C:/Users/James Xia/Desktop/cipher1/transform.cpp
+transform.h
+C:/Users/James Xia/Desktop/cipher1/transform.h
+
+C:/Users/James Xia/Desktop/cipher1/transform.h
+vector
+-
+cstdlib
+-
+ctime
+-
+cstdint
+-
+string
+-
+

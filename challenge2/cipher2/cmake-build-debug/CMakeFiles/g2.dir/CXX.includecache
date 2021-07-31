@@ -1,0 +1,52 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/James Xia/Desktop/cipher2/idea.cpp
+idea.h
+C:/Users/James Xia/Desktop/cipher2/idea.h
+
+C:/Users/James Xia/Desktop/cipher2/idea.h
+cstdint
+-
+iostream
+-
+string
+-
+cstdlib
+-
+bitset
+-
+
+C:/Users/James Xia/Desktop/cipher2/main.cpp
+iostream
+-
+cstring
+-
+fstream
+-
+idea.h
+C:/Users/James Xia/Desktop/cipher2/idea.h
+transform.h
+C:/Users/James Xia/Desktop/cipher2/transform.h
+
+C:/Users/James Xia/Desktop/cipher2/transform.cpp
+transform.h
+C:/Users/James Xia/Desktop/cipher2/transform.h
+
+C:/Users/James Xia/Desktop/cipher2/transform.h
+vector
+-
+cstdlib
+-
+ctime
+-
+cstdint
+-
+string
+-
+

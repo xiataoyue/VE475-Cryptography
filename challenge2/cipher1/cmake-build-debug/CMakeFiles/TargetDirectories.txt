@@ -1,0 +1,3 @@
+C:/Users/James Xia/Desktop/cipher1/cmake-build-debug/CMakeFiles/g2.dir
+C:/Users/James Xia/Desktop/cipher1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/James Xia/Desktop/cipher1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
